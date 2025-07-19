@@ -6,6 +6,9 @@ local vaultTiles = {}
 local pathMakerTileInfo = {}
 local itemInfo = {}
 local itemDropped = { 242, 1796, 7188 }
+-- update maling mannequin, display block, display shelf kalo lagi niat 
+-- mending scroll fesnuk😋😝
+-- local itemMaling = {}
 local running = false
 local typ = "nn"
 local len = 1
@@ -73,7 +76,7 @@ end
 function autoLoop()
     while true do
         if running and autoMode and not paused then
-            -- Cek item add di 
+            -- Cek item add diworld
             for _, obj in pairs(getWorldObject()) do
                 for _, id in ipairs(itemDropped) do
                     if obj.id == id then
@@ -163,18 +166,18 @@ end
 
 --===================[ DIALOG HELP ]===================--
 local helper = [[
-add_label_with_icon|big|`9HELPER HUNTING [BETA]|left|10024|
+add_label_with_icon|big|`9HELPER HUNTING [BETA]|left|12900|
 add_spacer|small|
-add_textbox|`9/set `w-> Configure world finder|left|64|
-add_textbox|`9/manual `w-> Manually search for a world|left|64|
-add_textbox|`9/stop `w-> Stop the auto finder|left|64|
-add_textbox|`9/next `w-> Resume if paused|left|64|
-add_textbox|`9/menu `w-> Show menu|left|64|
-add_textbox|`9/bypass `w-> Bypass Vault|left|64|
-add_textbox|`9/pscan `w-> Scan Path Maker|left|64|
-add_textbox|`9/magnet `w-> Take dropped items|left|64|
-add_textbox|`9/w (world) `w-> Warp to a world|left|64|
-add_textbox|`9/id (id) `w-> Warp to ID|left|64|
+add_label_with_icon|small|`w/set -> `7Configure world finder|left|14358|
+add_label_with_icon|small|`w/manual -> `7Manually search for a world|left|6276|
+add_label_with_icon|small|`w/stop -> `7Stop the auto finder|left|2584|
+add_label_with_icon|small|`w/next -> `7Resume if paused|left|482|
+add_label_with_icon|small|`w/menu -> `7Show menu|left|550|
+add_label_with_icon|small|`w/bypass -> `7Bypass Vault|left|8878|
+add_label_with_icon|small|`w/pscan -> `7Scan Path Maker|left|4482|
+add_label_with_icon|small|`w/magnet -> `7Take dropped items|left|6140|
+add_label_with_icon|small|`w/w (world) -> `7Warp to a world|left|3802|
+add_label_with_icon|small|`w/id (id) -> `7Warp to ID|left|858|
 add_spacer|small|
 add_quick_exit||
 end_dialog|bye|Exit|OK|
@@ -223,7 +226,7 @@ end_dialog|set_find_world|Cancel|OK|]]
             var[0] = "OnDialogRequest"
             var[1] = helper
             sendVariant(var)
-            ovlay("Opened helper menu.")
+           -- jgn alay ovlay("Opened helper menu.")
             return true
         elseif txt:find("/bypass ") then
             getVaultTiles()
