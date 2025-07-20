@@ -182,6 +182,7 @@ add_label_with_icon|small|`w/id (id) -> `7Warp to ID|left|858|
 add_spacer|small|
 add_image_button|gazette_YouTube|interface/large/gazette/gazette_5columns_btn04.rttex|7imageslayout20|https://www.youtube.com/KriboGTPS|Jangan lupa subrek ya ler|
 add_image_button|gazette_DiscordServer|interface/large/gazette/gazette_5columns_social_btn01.rttex|7imageslayout20|https://discord.gg/DCNmmkxc4s|Free script? Join ler|
+add_spacer|huge|
 add_spacer|big|
 add_quick_exit||
 end_dialog|bye|Exit|OK|
