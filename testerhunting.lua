@@ -108,7 +108,7 @@ function autoLoop()
             if now - lastOverlayTime >= 2 then
                 lastOverlayTime = now
                 for _, obj in pairs(getWorldObject()) do
-                    for _, id in ipairs(pauseIDs) do
+                    for _, id in ipairs(itemDropped) do
                         if obj.id == id then
                             ovlay("`4Paused! Still detecting item ID: " .. id)
                             break
