@@ -180,6 +180,7 @@ add_label_with_icon|small|`w/magnet -> `7Take dropped items|left|6140|
 add_label_with_icon|small|`w/w (world) -> `7Warp to a world|left|3802|
 add_label_with_icon|small|`w/id (id) -> `7Warp to ID|left|858|
 add_spacer|small|
+add_label_with_icon|small|`9Dont Forget To Join My Discord Community!|left|2480|
 add_image_button|gazette_YouTube|interface/large/gazette/gazette_5columns_btn04.rttex|7imageslayout20|https://www.youtube.com/KriboGTPS|Jangan lupa subrek ya ler|
 add_image_button|gazette_DiscordServer|interface/large/gazette/gazette_5columns_social_btn01.rttex|7imageslayout20|https://discord.gg/DCNmmkxc4s|Free script? Join ler|
 add_spacer|huge|
