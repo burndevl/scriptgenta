@@ -185,7 +185,7 @@ add_image_button|gazette_DiscordServer|interface/large/gazette/gazette_5columns_
 add_spacer|huge|
 add_spacer|big|
 add_quick_exit||
-end_dialog|bye|Exit|OK|
+end_dialog|bye|||
 ]]
 
 --===================[ HOOK ]===================--
