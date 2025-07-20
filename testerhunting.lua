@@ -184,7 +184,7 @@ add_label_with_icon|small|`9Dont Forget To Join My Discord Community!|left|2480|
 add_image_button|gazette_GrowtopiaForumUpdates|interface/large/gazette/gazette_3columns_forum_btn01.rttex|3imageslayout|https://discord.gg/DCNmmkxc4s|Free script Join Here!|
 add_spacer|huge|
 add_quick_exit||
-end_dialog|bye|Exit|Oke|
+end_dialog|bye|||
 ]]
 
 --===================[ HOOK ]===================--
