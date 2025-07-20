@@ -166,9 +166,10 @@ end
 
 --===================[ DIALOG HELP ]===================--
 local helper = [[
+add_image_button|banner|interface/large/burem.rttex|bannerlayout||||
 add_label_with_icon|big|`9HELPER HUNTING [BETA]|left|12900|
 add_spacer|small|
-add_label_with_icon|small|`w/set -> `7Configure world finder|left|14358|
+add_label_with_icon|small|`w/set -> `7Configure world finder|left|32|
 add_label_with_icon|small|`w/manual -> `7Manually search for a world|left|6276|
 add_label_with_icon|small|`w/stop -> `7Stop the auto finder|left|2584|
 add_label_with_icon|small|`w/next -> `7Resume if paused|left|482|
@@ -179,6 +180,8 @@ add_label_with_icon|small|`w/magnet -> `7Take dropped items|left|6140|
 add_label_with_icon|small|`w/w (world) -> `7Warp to a world|left|3802|
 add_label_with_icon|small|`w/id (id) -> `7Warp to ID|left|858|
 add_spacer|small|
+add_image_button|gazette_YouTube|interface/large/gazette/gazette_5columns_btn04.rttex|7imageslayout20|https://www.youtube.com/KriboGTPS|Jangan lupa subrek ya ler|
+add_image_button|gazette_DiscordServer|interface/large/gazette/gazette_5columns_social_btn01.rttex|7imageslayout20|https://discord.gg/DCNmmkxc4s|Free script? Join ler|
 add_quick_exit||
 end_dialog|bye|Exit|OK|
 ]]
