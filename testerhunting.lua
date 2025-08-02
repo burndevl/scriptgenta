@@ -76,18 +76,19 @@ end
 function autoLoop()
     while true do
         if running and autoMode and not paused then
-            -- Cek item add diworld
-            for _, obj in pairs(getWorldObject()) do
-                for _, id in ipairs(itemDropped) do
-                    if obj.id == id then
-                        paused = true
-                        lastOverlayTime = 0 -- reset overlay
-                        ovlay("`4Auto paused! Found drop item ID: " .. id)
-                        break
-                    end
-                end
-                if paused then break end
-            end
+            -- === ITEM DROP CHECK DISABLED ===
+            -- This part is disabled because it causes other scripts to pause or crash.
+            -- for _, obj in pairs(getWorldObject()) do
+            --     for _, id in ipairs(itemDropped) do
+            --         if obj.id == id then
+            --             paused = true
+            --             lastOverlayTime = 0 -- reset overlay timer
+            --             ovlay("`4Auto paused! Found drop item ID: " .. id)
+            --             break
+            --         end
+            --     end
+            --     if paused then break end
+            -- end
 
             if not paused then
                 local world = makeWorldName()
@@ -104,18 +105,20 @@ function autoLoop()
         end
 
         if running and autoMode and paused then
-            local now = os.time()
-            if now - lastOverlayTime >= 2 then
-                lastOverlayTime = now
-                for _, obj in pairs(getWorldObject()) do
-                    for _, id in ipairs(itemDropped) do
-                        if obj.id == id then
-                            ovlay("`4Paused! Still detecting item ID: " .. id)
-                            break
-                        end
-                    end
-                end
-            end
+            -- === STILL PAUSED CHECK DISABLED ===
+            -- Disabled to avoid continuous pause caused by detecting dropped items.
+            -- local now = os.time()
+            -- if now - lastOverlayTime >= 2 then
+            --     lastOverlayTime = now
+            --     for _, obj in pairs(getWorldObject()) do
+            --         for _, id in ipairs(itemDropped) do
+            --             if obj.id == id then
+            --                 ovlay("`4Paused! Still detecting item ID: " .. id)
+            --                 break
+            --             end
+            --         end
+            --     end
+            -- end
         end
         sleep(500)
     end
