@@ -1,6 +1,5 @@
 -- Dont remove this line, it is required for the script to run properly.
 -- Helper Hunting Script for Growtopia (mod menu gentahax v 5.23+)
-sendPacket(2, "action|input|text|/notif script_now_not_free!_/menu_check_discord_server")
 --===================[ GLOBAL VARIABLES ]===================--
 local vaultTiles = {}
 local pathMakerTileInfo = {}
@@ -234,6 +233,7 @@ end_dialog|set_find_world|Cancel|OK|]]
             var[1] = helper
             sendVariant(var)
            -- jgn alay ovlay("Opened helper menu.")
+            sendPacket(2, "action|input|text|/notif script_now_not_free!_/menu_check_discord_server")
             return true
         elseif txt:find("/bypass ") then
             getVaultTiles()
