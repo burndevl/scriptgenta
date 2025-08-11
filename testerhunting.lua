@@ -1,3 +1,4 @@
+-- update last 11 - agust - 2025
 -- Dont remove this line, it is required for the script to run properly.
 -- Helper Hunting Script for Growtopia (mod menu gentahax v 5.23+)
 --===================[ GLOBAL VARIABLES ]===================--
@@ -210,16 +211,16 @@ add_checkbox|world_a|Enable Auto Search|]] .. auto .. [[|
 end_dialog|set_find_world|Cancel|OK|]]
             sendVariant(var, -1, 700)
             return true
-        elseif txt:find("/stop ") then
+        elseif txt:find("/stop") then
             running = false
             autoMode = false
             paused = false
             ovlay("Auto finder stopped.")
             return true
-        elseif txt:find("/manual ") then
+        elseif txt:find("/manual") then
             manualFind()
             return true
-        elseif txt:find("/next ") then
+        elseif txt:find("/next") then
     if running and paused then
         paused = false
         ovlay("`2Resuming auto finder...")
@@ -227,7 +228,7 @@ end_dialog|set_find_world|Cancel|OK|]]
         ovlay("`9Auto finder is not paused.")
     end
     return true
-        elseif txt:find("/menu ") then
+        elseif txt:find("/menu") then
             local var = {}
             var[0] = "OnDialogRequest"
             var[1] = helper
@@ -235,7 +236,7 @@ end_dialog|set_find_world|Cancel|OK|]]
            -- jgn alay ovlay("Opened helper menu.")
             sendPacket(2, "action|input|text|/notif script_now_not_free!_/menu_check_discord_server")
             return true
-        elseif txt:find("/bypass ") then
+        elseif txt:find("/bypass") then
             getVaultTiles()
             local dialog = {
                 "add_label_with_icon|big|SAFE VAULT BYPASS|left|10024|",
@@ -257,7 +258,7 @@ end_dialog|set_find_world|Cancel|OK|]]
             var[1] = table.concat(dialog, "\n")
             sendVariant(var)
             return true
-        elseif txt:find("/pscan ") then
+        elseif txt:find("/pscan") then
             getPathMakerTile()
             local dialog = {
                 "add_label_with_icon|big|PATH MAKER EXPLOIT|left|10024|",
@@ -279,7 +280,7 @@ end_dialog|set_find_world|Cancel|OK|]]
             var[1] = table.concat(dialog, "\n")
             sendVariant(var)
             return true
-        elseif txt:find("/magnet ") then
+        elseif txt:find("/magnet") then
             getItemObject()
             local var = {}
             var[0] = "OnDialogRequest"
