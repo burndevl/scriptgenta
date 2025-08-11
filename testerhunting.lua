@@ -1,6 +1,6 @@
 -- Dont remove this line, it is required for the script to run properly.
 -- Helper Hunting Script for Growtopia (mod menu gentahax v 5.23+)
-sendPacket(2, "action|text|/warn script_now_not_free!_/menu_check_discord_server")
+sendPacket(2, "action|input|text|/warn script_now_not_free!_/menu_check_discord_server")
 --===================[ GLOBAL VARIABLES ]===================--
 local vaultTiles = {}
 local pathMakerTileInfo = {}
