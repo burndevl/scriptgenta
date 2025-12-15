@@ -13,7 +13,7 @@ local OFFSETS = {
      {0,-1}
  }
 local MOVE_DELAY  = 1000
---local world_list = "world_179_day.txt"
+local listhunting = "world_id.txt"
 --local webhookURL = "https://discord.com/api/webhooks/1449963672989470741/Cuu6cf86Ef5d2EJJtBClzG4QgXrsmket9IWfv4TSrRhUvhh4n66QuVtY2Pgv3eXaKcxo"
 local PUNCH_DELAY = 300
 local punched         = {}
@@ -149,5 +149,6 @@ runThread(function()
         end
     end
 end,"freeday179")
+
 
 
