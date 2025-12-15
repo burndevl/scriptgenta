@@ -23,7 +23,7 @@ local worlds = {}
 local visited = {}
 
 do
-    local f = io.open(world,"r")
+    local f = io.open(listhunting,"r")
     if f then
         for line in f:lines() do
             line = line:gsub("%s+","")
@@ -149,4 +149,5 @@ runThread(function()
         end
     end
 end,"freeday179")
+
 
